@@ -1,0 +1,25 @@
+{
+  "name": "quick-nodejs-starter",
+  "version": "0.1.0",
+  "description": "Your own description",
+  "main": "src/index.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node src/index.js",
+    "dev": "cross-env NODE_ENV=development DEBUG=app:* nodemon src/index.js",
+    "lint":"eslint .",
+    "test": "jest --verbose",
+    "test:coverage": "jest --collect-coverage"
+  },
+  "dependencies": {
+    "debug": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest": "^26.4.2",
+    "nodemon": "^1.19.1"
+  }
+}
