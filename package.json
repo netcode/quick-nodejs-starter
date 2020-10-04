@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "setup": "cp .env.example .env || echo 'failed to create .env file, please create it manually from .env.example",
     "start": "cross-env NODE_ENV=production node src/index.js",
     "dev": "cross-env NODE_ENV=development DEBUG=app:* nodemon src/index.js",
     "lint": "eslint .",
