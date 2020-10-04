@@ -8,7 +8,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/index.js",
     "dev": "cross-env NODE_ENV=development DEBUG=app:* nodemon src/index.js",
-    "lint":"eslint .",
+    "lint": "eslint .",
     "test": "jest --verbose",
     "test:coverage": "jest --collect-coverage"
   },
@@ -19,7 +19,17 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.0",
     "jest": "^26.4.2",
     "nodemon": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "echo 'Your pre push rules goes here'"
+    }
   }
 }
