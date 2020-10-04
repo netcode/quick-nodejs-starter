@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Your own description",
   "main": "src/index.js",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/index.js",
