@@ -18,7 +18,19 @@ I needed a very simple structure for small nodejs applications, so i made one fo
 * [eslint](https://eslint.org) - Find and fix problems in your JavaScript code
 * [husky](https://github.com/typicode/husky) - Manage pre-commit/pre-post git hooks
 
+## Using Docker 
+* For Development
+````
+docker-compose -f docker-compose-dev.yml up --build
+````
+
+For Production
+```
+docker-compose up --build
+```
+
 ## Installation (local)
+
 
 1. Install dependencies
 ```
