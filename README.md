@@ -24,7 +24,7 @@ I needed a very simple structure for small nodejs applications, so i made one fo
 docker-compose -f docker-compose-dev.yml up --build
 ````
 
-For Production
+* For Production
 ```
 docker-compose up --build
 ```
