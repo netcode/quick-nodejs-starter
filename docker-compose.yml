@@ -1,0 +1,13 @@
+
+version: '3'
+
+services:
+  starter:
+    build:
+      context: .
+    container_name: starter
+    env_file:  ./.env
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/node-starter
