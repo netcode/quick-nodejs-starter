@@ -11,4 +11,9 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - .:/node-starter
+      - "./:/usr/src/app"
+      - "reserved:/usr/src/app/node_modules"
+    stdin_open: true
+    tty: true  
+volumes:
+  reserved:    

@@ -1,6 +1,6 @@
 FROM node:lts-alpine3.9
 
-WORKDIR /node-starter
+WORKDIR /usr/src/app
 
 COPY yarn.lock ./
 
